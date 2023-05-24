@@ -43,6 +43,11 @@ void WiFi_Setup()
 
   Serial.println("Connecting to WiFi ...");
   WiFi.begin(ssid, password);
+  delay(1000);
+  WiFi.disconnect();
+  delay(1000);
+  WiFi.begin(ssid, password);
+  delay(1000);
 
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
