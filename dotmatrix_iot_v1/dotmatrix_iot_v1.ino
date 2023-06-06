@@ -153,6 +153,9 @@ void setup() {
   
   MQTT_Setup();
   delay(1000);
+    
+  DotMatrix_Setup()
+  delay(1000);
 }
 
 void loop() {
